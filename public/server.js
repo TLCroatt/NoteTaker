@@ -11,15 +11,20 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 //Note input data
-var notes = []
+var notes = [
+    {
+        routeName: "note",
+        uniqueID: "42"
+    },
+]
 
 //html routes for index and notes
 app.get("*", function(req, res) {
-    res.sendFile(path.join(__dirname, "index.html"));
+    res.sendFile(path.join(__dirname, "public/index.html"));
 });
 
 app.get("/notes", function(req, res) {
-    res.sendFile(path.join(__dirname, "notes.html"));
+    res.sendFile(path.join(__dirname, "public/notes.html"));
 });
 
 //create api routes
@@ -32,6 +37,11 @@ app.post("/api/notes", function(req, res) {
     console.log(newNote);
     notes.push(newNote);
     res.json(newNote);
+});
+
+app.delete("/api/notes/:id", function (req, res) {
+    //loop through all the notes to find the one with the unique id to be deleted
+    //rewrite all the notes to the db.json file
 });
 
 
