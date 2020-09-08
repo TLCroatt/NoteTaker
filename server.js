@@ -65,7 +65,6 @@ app.delete("/api/notes/:id", function (req, res) {
     //loop through all the notes to find the one with the unique id to be deleted
     //data.forEach()
     var deleteData = req.params.id;
-    //id="title"
     console.log(deleteData);
     for (i=0; i<parsedData.length; i++) {
         console.log(parsedData[i])
