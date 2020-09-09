@@ -14,8 +14,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"))
 
-//var data = fs.readFileSync("./db/db.json");
-
 //get requests for html and api
 app.get("/notes", function(req, res) {
     res.sendFile(path.join(__dirname, "public/notes.html"));
@@ -30,7 +28,6 @@ app.get("*", function(req, res) {
     res.sendFile(path.join(__dirname, "public/index.html"));
 });
 
-let newId = 0
 //post & delete requests
 app.post("/api/notes", function(req, res) {
     //open the db.json file (readFileSync)
@@ -57,7 +54,6 @@ app.delete("/api/notes/:id", function (req, res) {
     const data = fs.readFileSync("./db/db.json");
     const parsedData = JSON.parse(data);
     //loop through all the notes to find the one with the unique id to be deleted
-    //data.forEach()
     var deleteData = req.params.id;
     console.log(deleteData);
     for (i=0; i<parsedData.length; i++) {
