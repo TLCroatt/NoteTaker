@@ -4,6 +4,9 @@
 
 Write, save, and delete notes using express!
 
+<img width="1465" alt="NoteTaker" src="https://user-images.githubusercontent.com/66500773/92550539-ef879b00-f218-11ea-928f-8846139c83cd.png">
+
+
 ---
 
 ## Table of Contents
