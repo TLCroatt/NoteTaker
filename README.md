@@ -8,7 +8,7 @@ Write, save, and delete notes using express!
 
 ## Table of Contents
 [Installation](#installation)
-[User Store](#userStory)
+[User Story](#userStory)
 [License](#license)
 [Contributing](#contributing)
 
