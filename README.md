@@ -14,6 +14,7 @@ Write, save, and delete notes using express!
 [User Story](#userStory)
 [License](#license)
 [Contributing](#contributing)
+[Deployed App](#deployed)
 
 ---
 
@@ -48,4 +49,9 @@ Express
 JSON
 fs
 
+---
+
+## Deployed App
+[https://shrouded-gorge-63864.herokuapp.com/](https://shrouded-gorge-63864.herokuapp.com/)
+[https://github.com/TLCroatt/NoteTaker](https://github.com/TLCroatt/NoteTaker)
   
