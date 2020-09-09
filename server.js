@@ -3,6 +3,7 @@ var express = require("express");
 var fs = require("fs");
 var path = require("path");
 var { v4: uuidv4 } = require("uuid");
+const { get } = require("http");
 
 // Sets up the Express App
 var app = express();
@@ -43,14 +44,12 @@ app.post("/api/notes", function(req, res) {
         id: uuidv4()
     }
     console.log(newNote);
-    
-    
+
     //push newNote onto array parsed from db.json file
     parsedData.push(newNote);
     
     //then write to the db.json file (stringify again JSON.stringify(parsedData))
     fs.writeFileSync("./db/db.json", JSON.stringify(parsedData));
-    
 });
 
 app.delete("/api/notes/:id", function (req, res) {
@@ -63,7 +62,7 @@ app.delete("/api/notes/:id", function (req, res) {
     console.log(deleteData);
     for (i=0; i<parsedData.length; i++) {
         console.log(parsedData[i])
-        if (deleteData === parsedData[i].title) {
+        if (deleteData === parsedData[i].id) {
             parsedData.splice(i, 1)
         };
     };
