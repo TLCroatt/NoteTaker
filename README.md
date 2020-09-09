@@ -10,10 +10,11 @@ Write, save, and delete notes using express!
 ---
 
 ## Table of Contents
-[Installation](#installation)
-[User Story](#userStory)
-[License](#license)
-[Contributing](#contributing)
+[Installation](#installation)\
+[User Story](#userStory)\
+[License](#license)\
+[Contributing](#contributing)\
+[Deployed App](#deployed)\
 
 ---
 
@@ -41,11 +42,16 @@ Copyright (c) [2020] [Trisha Croatt]
 ---
 
 ## Contributing
-HTML
-CSS
-Javascript
-Express
-JSON
-fs
+HTML\
+CSS\
+Javascript\ 
+Express\
+JSON\
+fs\
 
+---
+
+## Deployed App
+[https://shrouded-gorge-63864.herokuapp.com/](https://shrouded-gorge-63864.herokuapp.com/)\
+[https://github.com/TLCroatt/NoteTaker](https://github.com/TLCroatt/NoteTaker)
   
